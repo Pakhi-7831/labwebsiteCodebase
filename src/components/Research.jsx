@@ -33,7 +33,7 @@ export default function Research() {
   return (
     <section id="research" className="bg-white text-black py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">
+        <h2 className="text-4xl font-bold font-montserrat text-center mb-12">
           Our Research Focus
         </h2>
 
@@ -65,39 +65,6 @@ export default function Research() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Projects Grid */}
-        <div className="mt-20">
-          <h3 className="text-3xl font-bold mb-6 text-center">Featured Research Areas</h3>
-          {loading ? (
-            <p className="text-center text-gray-500">Loading research projects...</p>
-          ) : (
-            <div className="grid md:grid-cols-3 gap-8">
-              {projects.map((project) => (
-                <div
-                  key={project.id}
-                  className="bg-gradient-to-br from-gray-900 to-gray-700 text-white p-6 rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                >
-                  <div
-                    className={`w-12 h-12 flex items-center justify-center rounded-full mb-4 text-xl ${project.color}`}
-                  >
-                    {project.icon}
-                  </div>
-                  <h4 className="text-xl font-semibold mb-2">{project.title}</h4>
-                  <p className="text-gray-300 text-sm mb-4">{project.description}</p>
-                  <ul className="space-y-2 text-sm">
-                    {project.findings.map((finding, index) => (
-                      <li key={index} className="flex items-start space-x-2">
-                        <span className="text-green-400">✔️</span>
-                        <span>{finding}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          )}
         </div>
       </div>
     </section>

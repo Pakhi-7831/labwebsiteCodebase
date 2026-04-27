@@ -2,227 +2,460 @@ import React from "react";
 
 export default function About() {
   return (
+    <div className="bg-white text-black font-sans mx-auto px-6 pb-6 pt-0 space-y-10">
 
+      {/* LAB HERO FIRST WITH BACKGROUND */}
+<div
+  className="relative -mx-6 bg-cover bg-center bg-no-repeat py-20"
+  style={{
+    backgroundImage: "url('/bg2.jpg')" // put your image in public/
+  }}
+>
+  {/* OVERLAY */}
+  <div className="absolute inset-10"></div>
+
+  {/* CONTENT */}
+  <div className="relative max-w-5xl mx-auto space-y-6 px-4  text-white">
     
+    <h2 className="text-3xl font-bold text-center font-montserrat">
+      Advancing Sustainable Chemistry through Innovation
+    </h2>
+
+    <p className="text-lg text-center leading-relaxed">
+      Our group focuses on the development of novel ligands, base metal complexes,
+      and sustainable synthetic methods that enable the valorization of biomass.
+      Our main motive is the synthesis of bio-based chemicals, pharmaceuticals,
+      polymers, etc. using inexpensive ligands and metals as catalysts aligned with
+      sustainability, green chemistry, and circular economy.
+    </p>
 
 
+      {/* RESEARCH LAB */}
+      <section>
+        <h2 className="text-2xl font-semibold font-montserrat">Research Lab</h2>
+        <p>
+          Our lab focuses on groundbreaking research in chemistry and biotechnology,
+          aiming to develop sustainable solutions for industrial and academic advancements.
+        </p>
+      </section>
 
-    <div className="bg-white text-black font-sans mx-auto p-6 space-y-6">
-      <h1 className="text-4xl font-bold text-center border-b-2 pb-2 text-black">About Our Research Lab</h1>
-       
+      {/* MISSION */}
+      <section>
+        <h2 className="text-2xl font-semibold font-montserrat">Mission</h2>
+        <p>
+          To push the boundaries of scientific innovation while fostering a collaborative
+          and inclusive research environment.
+        </p>
+      </section>
 
-      {/* sir info */}
-      <div className="max-w-7xl mx-auto py-12 text-black">
+      {/* VISION */}
+      <section>
+        <h2 className="text-2xl font-semibold font-montserrat">Vision</h2>
+        <p>
+          Our vision is to transform chemical synthesis by replacing fossil fuel dependence with 
+          sustainable, biomass-based alternatives. Through the development of novel ligands, 
+          base metal catalysts, and green synthetic methods, we aim to enable a more 
+          climate-conscious and sustainable chemical industry.
+        </p>
+      </section>
+      </div>
+    </div>
+
+      {/* PROFESSOR SECTION (UNCHANGED CONTENT) */}
+      <div className="max-w-7xl  mx-auto py-12 px-6 text-black">
         <div className="grid md:grid-cols-2 gap-8 items-center">
+
+          {/* TEXT */}
           <div className="space-y-6">
-            {/* <h1 className="text-4xl font-bold">
-              Highly motivated scholars can join our group for Ph.D for Advancing Inorganic Chemistry for a Sustainable and Greener Future.
-            </h1> */}
             <div className="text-start">
-              <h2 className="text-2xl font-semibold">Dr. SaravanaKumar Elangovan</h2>
-              <p className="text-lg">Assistant Professor, Department of Chemistry</p>
-              <p>IIT (BHU) Varanasi</p>
-              <p className="font-semibold">Postdoctoral Researcher:</p>
-              <p>Technische Universität Berlin, University of Groningen</p>
-              <p className="font-semibold">Research Associate:</p>
-              <p>Syngene International Limited</p>
-              <p className="font-semibold">Area of Interest:</p>
-              <p>Organometallic Chemistry, Homogeneous Catalysis, Biomass Conversions, Green Chemistry</p>
-              <p className="font-semibold mt-2">Phone: +91-12345678</p>
-              <p className="font-semibold">Email: <a href="mailto:abcd.chy@iitbhu.ac.in" className="text-blue-600 underline">abcd.chy@iitbhu.ac.in</a></p>
+
+              <h2 className="text-3xl font-bold font-montserrat mb-3">
+                Dr. Saravanakumar Elangovan
+              </h2>
+
+              <p className="text-lg text-gray-700">
+                Assistant Professor, Department of Chemistry
+              </p>
+
+              <p className="text-lg text-gray-700 mb-2">
+                IIT (BHU) Varanasi
+              </p>
+
+              <p className="font-semibold font-montserrat">
+                Postdoctoral Researcher:
+              </p>
+              <p>
+                Technische Universität Berlin, University of Groningen
+              </p>
+
+              <p className="font-semibold font-montserrat mt-2">
+                Research Associate:
+              </p>
+              <p>
+                Syngene International Limited
+              </p>
+
+              <p className="font-semibold font-montserrat mt-2">
+                Area of Interest:
+              </p>
+              <p>
+                Organometallic Chemistry, Homogeneous Catalysis,
+                Biomass Conversions, Green Chemistry
+              </p>
+
+              <p className="font-semibold font-montserrat mt-2">
+                Phone: +91-12345678
+              </p>
+
+              <p className="font-semibold font-montserrat">
+                Email:{" "}
+                <a
+                  href="mailto:abcd.chy@iitbhu.ac.in"
+                  className="text-blue-600 underline"
+                >
+                  abcd.chy@iitbhu.ac.in
+                </a>
+              </p>
+
               <a
                 href="/about"
                 className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
               >
                 Learn More
               </a>
+
             </div>
           </div>
+
+          {/* IMAGE */}
           <div>
             <img
               className="w-full rounded-lg shadow-lg"
-              src="https://m.economictimes.com/thumb/msid-108212368,width-1200,height-900,resizemode-4,imgsize-69468/ms-dhoni.jpg"
+              src="/saravan_sir.jpeg" // replace with actual image
               alt="Professor"
             />
           </div>
+
         </div>
       </div>
 
-      <div className="mx-12">
-         {/* Research Lab Overview */}
-      <section>
-        <h2 className="text-2xl font-semibold">Research Lab</h2>
-        <p>
-          Our lab focuses on groundbreaking research in chemistry and biotechnology, aiming to develop
-          sustainable solutions for industrial and academic advancements.
-        </p>
-      </section>
+<section className="mt-8 px-4">
+  {/* HEADER */}
+  <h2 className="text-2xl font-bold font-montserrat mb-4 border-b pb-2">
+    Personal Experience
+  </h2>
+  
 
-      {/* Mission Statement */}
-      <section>
-        <h2 className="text-2xl font-semibold">Mission</h2>
-        <p>
-          To push the boundaries of scientific innovation while fostering a collaborative and inclusive research
-          environment.
-        </p>
-      </section>
+  {/* CONTENT */}
+  <section>
+  <div className="space-y-3 pl-4">
+    
+    <div className="flex justify-between items-start">
+      <div>
+        <div className="font-semibold text-base">
+          Assistant Professor
+        </div>
+        <div className="text-gray-600 text-sm">
+          Indian Institute of Technology (BHU), Varanasi
+        </div>
+      </div>
+      <div className="italic text-gray-500 text-sm whitespace-nowrap">
+        July 2022 – Present
+      </div>
+    </div>
 
-      {/* Vision Statement */}
-      <section>
-        <h2 className="text-2xl font-semibold">Vision</h2>
-        <p>
-        Our group focuses on the development of novel ligands, base metal complexes, and sustainable synthetic methods that enable the valorization of biomass. To date, most of the valuable chemicals are produced from fossil fuels that result in adverse 
-        climate change. Hence, our main motive is the synthesis of bio-based chemicals, pharmaceuticals, polymers, etc. using inexpensive ligands and metals as catalysts concerning sustainability, green chemistry, and circular economy. 
-        </p>
-      </section>
+    <div className="flex justify-between items-start">
+      <div>
+        <div className="font-semibold text-base">
+          Ramanujan Fellow
+        </div>
+        <div className="text-gray-600 text-sm">
+          National Institute of Technology, Trichy
+        </div>
+      </div>
+      <div className="italic text-gray-500 text-sm whitespace-nowrap">
+        Mar 2022 – June 2022
+      </div>
+    </div>
 
-      {/* Team Section */}
-      <section>
-  <h2 className="text-2xl font-semibold">Our Team</h2>
-  <p>
-    Our team consists of dedicated researchers, PhD scholars, and visiting faculty from renowned 
-    institutions worldwide.
-  </p>
+    <div className="flex justify-between items-start">
+      <div>
+        <div className="font-semibold text-base">
+          Humboldt Post-Doctoral Fellow
+        </div>
+        <div className="text-gray-600 text-sm">
+          Technical University of Berlin, Germany
+        </div>
+        <div className="text-xs text-gray-500 ml-2 mt-0.5">
+          Advisor: Prof. Dr. Martin Oestreich
+        </div>
+      </div>
+      <div className="italic text-gray-500 text-sm whitespace-nowrap">
+        Aug 2019 – Feb 2022
+      </div>
+    </div>
 
-  {/* Research Scholars */}
-  <h3 className="text-xl font-semibold mt-4">Research Scholars</h3>
-  <ul className="list-disc pl-6">
-    <li><strong>Mohd Farhan Ansari</strong> (<a href="mailto:mohdfarhanansari.rs.chy22@itbhu.ac.in" className="text-blue-500">mohdfarhanansari.rs.chy22@itbhu.ac.in</a>)</li>
-    <li><strong>Atul Kumar Maurya</strong> (<a href="mailto:atulkumarmaurya.rs.chy23@itbhu.ac.in" className="text-blue-500">atulkumarmaurya.rs.chy23@itbhu.ac.in</a>)</li>
-    <li><strong>Rashid Khan</strong> (<a href="mailto:rashidkhan.rs.chy24@itbhu.ac.in" className="text-blue-500">rashidkhan.rs.chy24@itbhu.ac.in</a>)</li>
-    <li><strong>Ratnakar Singh</strong> (<a href="mailto:ratnakarsingh.rs.chy24@itbhu.ac.in" className="text-blue-500">ratnakarsingh.rs.chy24@itbhu.ac.in</a>)</li>
-  </ul>
+    <div className="flex justify-between items-start">
+      <div>
+        <div className="font-semibold text-base">
+          Post-Doctoral Researcher
+        </div>
+        <div className="text-gray-600 text-sm">
+          University of Groningen, The Netherlands
+        </div>
+        <div className="text-xs text-gray-500 ml-2 mt-0.5">
+          Advisor: Prof. Dr. Katalin Barta
+        </div>
+      </div>
+      <div className="italic text-gray-500 text-sm whitespace-nowrap">
+        Feb 2017 – July 2019
+      </div>
+    </div>
 
-  {/* Master Students */}
-  <h3 className="text-xl font-semibold mt-4">Master Students</h3>
-  <ul className="list-disc pl-6">
-    <li><strong>Mansi Yadav</strong></li>
-    <li><strong>Alka Yadav</strong></li>
-  </ul>
+    <div className="flex justify-between items-start">
+      <div>
+        <div className="font-semibold text-base">
+          Professor
+        </div>
+        <div className="text-gray-600 text-sm">
+          Indian Institute of Technology (BHU)
+        </div>
+      </div>
+      <div className="italic text-gray-500 text-sm whitespace-nowrap">
+        2015 – Present
+      </div>
+    </div>
 
-  {/* IDD Students */}
-  <h3 className="text-xl font-semibold mt-4">IDD Students</h3>
-  <ul className="list-disc pl-6">
-    <li><strong>Akash Kumar</strong></li>
-    <li><strong>Pakhi Awasthi</strong></li>
-    <li><strong>Ankita Patra</strong></li>
-  </ul>
+    <div className="flex justify-between items-start">
+      <div>
+        <div className="font-semibold text-base">
+          Postdoctoral Research
+        </div>
+        <div className="text-gray-600 text-sm">
+          University of Warwick
+        </div>
+      </div>
+      <div className="italic text-gray-500 text-sm whitespace-nowrap">
+        2012 – 2015
+      </div>
+    </div>
 
-  {/* Alumni */}
-  <h3 className="text-xl font-semibold mt-4">Alumni</h3>
-  <ul className="list-disc pl-6">
-    <li><strong>Anshika</strong> (M.Sc. 2023; Current position: Ph.D. student, Michigan State University, USA)</li>
-    <li><strong>Abhishek Kumar</strong> (M.Sc. 2024)</li>
-    <li><strong>Nitin Acchelal Yadav</strong> (M.Sc. 2024)</li>
-  </ul>
+    <div className="flex justify-between items-start">
+      <div>
+        <div className="font-semibold text-base">
+          Research Associate
+        </div>
+        <div className="text-gray-600 text-sm">
+          Syngene International Ltd, Bangalore
+        </div>
+      </div>
+      <div className="italic text-gray-500 text-sm whitespace-nowrap">
+        Feb 2010 – Aug 2012
+      </div>
+    </div>
+
+    <div className="flex justify-between items-start">
+      <div>
+        <div className="font-semibold text-base">
+          Research Associate
+        </div>
+        <div className="text-gray-600 text-sm">
+          XYZ Institute
+        </div>
+      </div>
+      <div className="italic text-gray-500 text-sm whitespace-nowrap">
+        2009 – 2012
+      </div>
+    </div>
+
+    <div className="flex justify-between items-start">
+      <div>
+        <div className="font-semibold text-base">
+          Chemist
+        </div>
+        <div className="text-gray-600 text-sm">
+          Advinus Therapeutics Private Ltd, Bangalore, India
+        </div>
+      </div>
+      <div className="italic text-gray-500 text-sm whitespace-nowrap">
+        June 2009 – Dec 2010
+      </div>
+    </div>
+
+  </div>
+  </section>
 </section>
 
+      <section className="mt-8 px-4">
+  {/* HEADER */}
+  <h2 className="text-2xl font-bold font-montserrat mb-4 border-b pb-2">
+    Awards & Recognitions
+  </h2>
 
-      {/* Join Us Section */}
-      <section>
-        <h2 className="text-2xl font-semibold">Join Us</h2>
-        <p>
-          We welcome highly motivated scholars to join our research team. Reach out to us for more details
-          on opportunities available in our lab.
-        </p>
-      </section>
+  {/* CONTENT */}
+  <ul className="divide-y list-disc pl-5 space-y-2">
+    <li className="flex justify-between py-2">
+      <div>
+        <span className="font-semibold">
+          Beijing Youth Talent Funding Program
+        </span>
+        <span className="text-gray-600 text-sm ml-2">
+          – Visiting program for young foreign scholars
+        </span>
+      </div>
+      <div className="italic text-gray-500 text-sm">
+        {/* No year for this one */}
+      </div>
+    </li>
 
-      {/* Personal Experience */}
-      <section>
-  <h2 className="text-2xl font-semibold">Personal Experience</h2>
-  <ul className="list-disc pl-6">
-    <li className="flex justify-between">
-      <span><strong>Assistant Professor</strong>, Indian Institute of Technology (BHU), Varanasi</span>
-      <span>July 2022 – Present</span>
+    <li className="flex justify-between py-2">
+      <div className="font-semibold">
+        Ramanujan Fellowship
+      </div>
+      <div className="italic text-gray-500 text-sm">
+        2021
+      </div>
     </li>
-    <li className="flex justify-between">
-      <span><strong>Ramanujan Fellow</strong>, National Institute of Technology, Trichy</span>
-      <span>Mar 2022 – June 2022</span>
-    </li>
-    <li className="flex justify-between">
-      <span><strong>Humboldt Post-Doctoral Fellow</strong>, Technical University of Berlin, Germany</span>
-      <span>Aug 2019 – Feb 2022</span>
-    </li>
-    <li className="flex justify-between">
-      <span>Advisor: Prof. Dr. Martin Oestreich</span>
-    </li>
-    <li className="flex justify-between">
-      <span><strong>Post-Doctoral Researcher</strong>, University of Groningen, The Netherlands</span>
-      <span>Feb 2017 – July 2019</span>
-    </li>
-    <li className="flex justify-between">
-      <span>Advisor: Prof. Dr. Katalin Barta</span>
-    </li>
-    <li className="flex justify-between">
-      <span><strong>Professor</strong>, Indian Institute of Technology (BHU)</span>
-      <span>2015 – Present</span>
-    </li>
-    <li className="flex justify-between">
-      <span><strong>Postdoctoral Research</strong>, University of Warwick</span>
-      <span>2012 – 2015</span>
-    </li>
-    <li className="flex justify-between">
-      <span><strong>Research Associate</strong>, Syngene International Ltd, Bangalore</span>
-      <span>Feb 2010 – Aug 2012</span>
-    </li>
-    <li className="flex justify-between">
-      <span><strong>Research Associate</strong>, XYZ Institute</span>
-      <span>2009 – 2012</span>
-    </li>
-    <li className="flex justify-between">
-      <span><strong>Chemist</strong>, Advinus Therapeutics Private Ltd, Bangalore, India</span>
-      <span>June 2009 – Dec 2010</span>
-    </li>
-  </ul>
-</section>
 
+    <li className="flex justify-between py-2">
+      <div className="font-semibold">
+        Alexander Von Humboldt Fellowship
+      </div>
+      <div className="italic text-gray-500 text-sm">
+        Aug 2019 – July 2021
+      </div>
+    </li>
 
-      {/* Awards */}
-      <section>
-  <h2 className="text-2xl font-semibold">Awards & Recognitions</h2>
-  <ul className="list-disc pl-6 mb-9">
-    <li><strong>Beijing Youth Talent Funding Program</strong> – Visiting program for young foreign scholars</li>
-    <li><strong>Ramanujan Fellowship</strong> <span className="float-right">2021</span></li>
-    <li><strong>Alexander Von Humboldt Fellowship</strong> <span className="float-right">Aug 2019 – July 2021</span></li>
-    <li><strong>Selected for 70th Lindau Nobel Laureate Meeting</strong> <span className="float-right">2020</span></li>
-    <li><strong>Ph.D. Fellowship</strong>, Leibniz-Institut für Katalyse, Rostock, Germany <span className="float-right">Feb 2015 – July 2016</span></li>
-    <li><strong>Ph.D. Fellowship (ARED)</strong>, Conseil Régional de Bretagne, Rennes, France <span className="float-right">Oct 2013 – Jan 2015</span></li>
-    <li><strong>Charpak Scholarship of Excellence</strong> for International Master Program, University of Rennes1, France <span className="float-right">Sep 2012 – June 2013</span></li>
-    <li><strong>The Tamilnadu Educational Trust</strong> – Fresh Scholarship for Master Studies <span className="float-right">2007 – 2008</span></li>
-    <li><strong>Best Researcher Award</strong>, XYZ Organization <span className="float-right">2021</span></li>
-    <li><strong>National Science Fellowship</strong> <span className="float-right">2018</span></li>
-    <li><strong>Innovative Chemist Award</strong> <span className="float-right">2015</span></li>
+    <li className="flex justify-between py-2">
+      <div className="font-semibold">
+        Selected for 70th Lindau Nobel Laureate Meeting
+      </div>
+      <div className="italic text-gray-500 text-sm">
+        2020
+      </div>
+    </li>
+
+    <li className="flex justify-between py-2">
+      <div>
+        <span className="font-semibold">
+          Ph.D. Fellowship
+        </span>
+        <span className="text-gray-600 text-sm ml-2">
+          – Leibniz-Institut für Katalyse, Rostock, Germany
+        </span>
+      </div>
+      <div className="italic text-gray-500 text-sm">
+        Feb 2015 – July 2016
+      </div>
+    </li>
+
+    <li className="flex justify-between py-2">
+      <div>
+        <span className="font-semibold">
+          Ph.D. Fellowship (ARED)
+        </span>
+        <span className="text-gray-600 text-sm ml-2">
+          – Conseil Régional de Bretagne, Rennes, France
+        </span>
+      </div>
+      <div className="italic text-gray-500 text-sm">
+        Oct 2013 – Jan 2015
+      </div>
+    </li>
+
+    <li className="flex justify-between py-2">
+      <div>
+        <span className="font-semibold">
+          Charpak Scholarship of Excellence
+        </span>
+        <span className="text-gray-600 text-sm ml-2">
+          – University of Rennes1, France
+        </span>
+      </div>
+      <div className="italic text-gray-500 text-sm">
+        Sep 2012 – June 2013
+      </div>
+    </li>
+
+    <li className="flex justify-between py-2">
+      <div>
+        <span className="font-semibold">
+          The Tamilnadu Educational Trust
+        </span>
+        <span className="text-gray-600 text-sm ml-2">
+          – Fresh Scholarship for Master Studies
+        </span>
+      </div>
+      <div className="italic text-gray-500 text-sm">
+        2007 – 2008
+      </div>
+    </li>
+
+    <li className="flex justify-between py-2">
+      <div className="font-semibold">
+        Best Researcher Award, XYZ Organization
+      </div>
+      <div className="italic text-gray-500 text-sm">
+        2021
+      </div>
+    </li>
+
+    <li className="flex justify-between py-2">
+      <div className="font-semibold">
+        National Science Fellowship
+      </div>
+      <div className="italic text-gray-500 text-sm">
+        2018
+      </div>
+    </li>
+
+    <li className="flex justify-between py-2">
+      <div className="font-semibold">
+        Innovative Chemist Award
+      </div>
+      <div className="italic text-gray-500 text-sm">
+        2015
+      </div>
+    </li>
   </ul>
 </section>
 
 
       {/* Academic Background */}
-      <section>
-  <h2 className="text-2xl font-semibold">Academic Background</h2>
-  <ul className="list-disc pl-6 mb-9">
+      <section className="mt-6 px-4">
+  <h2 className="text-2xl font-bold font-montserrat mb-4 border-b pb-2">
+    Academic Background
+  </h2>
+
+  <ul className="list-disc mt-2 pl-6 space-y-2">
+    
     <li>
       <strong>Ph.D. in Organometallics and Catalysis</strong>, Université de Rennes 1, Rennes, France, Leibniz-Institut für Katalyse e. V., Rostock, Germany 
-      <span className="float-right">2013 – 2017</span>
+      <span className="float-right italic text-gray-500 text-sm">2013 – 2017</span>
       <br />
       Advisors: Prof. Christophe Darcel and Prof. Dr. Matthias Beller
     </li>
+
     <li>
       <strong>International Master Program</strong> in Molecular Catalysis and Green Chemistry, Université de Rennes 1, France 
-      <span className="float-right">2012 – 2013</span>
+      <span className="float-right italic text-gray-500 text-sm">2012 – 2013</span>
     </li>
+
     <li>
       <strong>Master of Science in Chemistry</strong>, St. Joseph’s College, Trichy, India 
-      <span className="float-right">2007 – 2009</span>
+      <span className="float-right italic text-gray-500 text-sm">2007 – 2009</span>
     </li>
+
     <li>
       <strong>Bachelor of Science in Chemistry</strong>, AVVM Sri Pushpam College, Thanjavur, India 
-      <span className="float-right">2003 – 2006</span>
+      <span className="float-right italic text-gray-500 text-sm">2003 – 2006</span>
     </li>
+
   </ul>
 </section>
 
-<section>
-  <h2 className="text-2xl font-semibold">Teaching</h2>
+<section className="mt-6 px-4">
+  <h2 className="text-2xl font-bold font-montserrat mb-4 border-b pb-2">Teaching</h2>
   <p>
     Below are the courses taught, covering fundamental and advanced topics in Chemistry.
   </p>
@@ -250,9 +483,5 @@ export default function About() {
 </section>
 
       </div>
-
-      
-
-    </div>
   );
 }

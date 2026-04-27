@@ -38,7 +38,7 @@ export default function Footer() {
             <li><Link to="/research" className="hover:text-white">Research</Link></li>
             <li><Link to="/publications" className="hover:text-white">Publications</Link></li>
             {/* <li><Link to="/laboratory" className="hover:text-white">Laboratory</Link></li> */}
-            <li><Link to="/students" className="hover:text-white">Teams</Link></li>
+            <li><Link to="/students" className="hover:text-white">Team</Link></li>
             <li><Link to="/gallery" className="hover:text-white">Gallery</Link></li>
             {/* <li><Link to="/about" className="hover:text-white">About</Link></li> */}
             <li><Link to="/contact" className="hover:text-white">Contact</Link></li>

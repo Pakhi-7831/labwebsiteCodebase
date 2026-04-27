@@ -70,12 +70,12 @@ export default function Home() {
         className="w-full text-start py-8 px-2 md:px-14 bg-cover bg-center relative z-10"
         style={{ backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzGUHgPpE8IVJytFxgCi8mXngZ3mxXfs81bw&s')" }}
       >
-       <h1 className=" mx-1 md:ml-10 md:mr-8 text-2xl md:text-4xl font-bold mb-2">
+       <h1 className="font-montserrat mx-1 md:ml-10 md:mr-8 text-3xl md:text-4xl font-bold mb-2 tracking-tight">
         The Organometallics and Sustainable Catalysis Lab
         </h1>
        <p className="mx-1 md:ml-10 md:mr-8 text-xl md:text-xl">
-          We focus on the <em>development</em> of novel ligands and <strong className="text-lime-400">base metal complexes</strong>, and
-           sustainable synthetic methods that enable the valorization of biomass.
+          We focus on the development of <strong className="text-emerald-600">novel ligands</strong> and <strong className="text-emerald-600">base metal complexes</strong>, and
+           sustainable synthetic methods that enable the <strong className="text-emerald-600">valorization of biomass</strong>.
         </p>
     </div>
 
@@ -130,13 +130,13 @@ export default function Home() {
 
              {/* Research and Values Section */}
       <div className="bg-slate-100 py-20 border-t border-gray-300 text-black">
-        <div className="max-w-6xl mx-auto px-4 md:flex md:space-x-12">
+        <div className="max-w-6xl mx-auto px-4 md:flex md:space-x-12 md:items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
-            <h2 className="text-5xl font-semibold text-gray-900 mb-3">Research and values</h2>
-            <p className="text-gray-500 text-xl">What we do & who we are</p>
+            <h2 className="text-5xl font-semibold text-gray-900 mb-3 font-montserrat">Research and values</h2>
+            <p className="text-gray-500 font-semibold text-xl">Who we are and what we do</p>
           </div>
           <div className="md:w-1/2 text-lg text-gray-700 space-y-4">
-          <p className="text-4xl">
+          <p className="text-4xl font-montserrat">
               <b>Welcome to the Sustainable and Green Catalysis Lab!</b> 
             </p>
             <p>
@@ -160,10 +160,10 @@ export default function Home() {
       "url('https://www.shutterstock.com/image-illustration/glowing-plexus-two-colors-abstract-600nw-2089760452.jpg')",
   }}
 >
-  <div className="max-w-6xl mx-auto px-4 md:flex md:space-x-12 text-white">
+  <div className="max-w-6xl mx-auto px-4 md:flex md:space-x-12 md:items-center text-white">
     {/* Left - Heading */}
     <div className="md:w-1/2 mb-10 md:mb-0">
-      <h2 className="text-5xl font-semibold text-white mb-3">Latest News</h2>
+      <h2 className="text-5xl font-semibold text-white mb-3 font-montserrat">Latest News</h2>
       <p className="text-xl text-gray-200">Updates from our lab</p>
     </div>
 
@@ -185,14 +185,14 @@ export default function Home() {
 
       {researchSliderImages.length === 0 ? (
   <div className="w-full h-[400px] flex justify-center items-center text-white text-xl">
-    Loading hero content...
+    Loading content...
   </div>
 ) : (
-  <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden bg-black ">
+  <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden bg-black my-8 md:my-12">
 <img
   src={researchSliderImages[researchIndex].src}
   alt="research slider"
-  className="mx-auto mt-2 mb-2 object-cover h-[280px] md:h-[380px] w-[95%] rounded-lg shadow-md"
+  className="mx-auto object-contain h-[280px] md:h-[380px] w-[95%] rounded-lg shadow-md"
 />
 
     {/* <div className=" inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-start px-12 text-left">
