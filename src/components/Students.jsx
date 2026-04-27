@@ -29,34 +29,68 @@ export default function Students() {
     filter === "All" ? students : students.filter((s) => s.role.includes(filter));
 
   return (
-    <section id="students" className="p-6 text-center bg-slate-800 font-sans">
-      <h2 className="font-sans text-3xl md:text-5xl font-bold mb-6 border-b-2 pb-2 text-slate-50">
-        Research Team
-      </h2>
+    <section id="team" className="bg-slate-800 text-white py-16 px-4">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl font-bold font-montserrat text-center mb-12">
+          Our Research Team
+        </h2>
 
       {/* Proff */}
 
-      <h2 className="font-mono text-4xl md:text-6xl text-start md:ml-24 ">Professor</h2>
-
-      <div className="max-w-7xl mx-auto py-12 text-white">
+      <div className="max-w-7xl  mx-auto py-12 px-6 text-white">
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="space-y-6">
-            {/* <h1 className="text-4xl font-bold">
-              Highly motivated scholars can join our group for Ph.D for Advancing Inorganic Chemistry for a Sustainable and Greener Future.
-            </h1> */}
-            <div className="text-start text-white mb-1">
-              <h2 className="text-2xl font-semibold">Dr. SaravanaKumar Elangovan</h2>
-              <p className="text-lg mb-1">Assistant Professor, Department of Chemistry</p>
-              <p>IIT (BHU) Varanasi</p>
-              <p className="font-semibold mb-1">Postdoctoral Researcher:</p>
-              <p>Technische Universität Berlin, University of Groningen</p>
-              <p className="font-semibold mb-1">Research Associate:</p>
-              <p>Syngene International Limited</p>
-              <p className="font-semibold mb-1">Area of Interest:</p>
-              <p>Organometallic Chemistry, Homogeneous Catalysis, Biomass Conversions, Green Chemistry</p>
-              <p className="font-semibold mt-2 mb-1">Phone: +91-12345678</p>
-              <p className="font-semibold">Email: <a href="mailto:abcd.chy@iitbhu.ac.in" className="text-blue-600 underline">abcd.chy@iitbhu.ac.in</a></p>
 
+          {/* TEXT */}
+          <div className="space-y-6">
+            <div className="text-start">
+
+              <h2 className="text-3xl font-bold font-montserrat mb-3">
+                Dr. Saravanakumar Elangovan
+              </h2>
+
+              <p className="text-lg text-gray-200">
+                Assistant Professor, Department of Chemistry
+              </p>
+
+              <p className="text-lg text-gray-200 mb-2">
+                IIT (BHU) Varanasi
+              </p>
+
+              <p className="font-semibold font-montserrat">
+                Postdoctoral Researcher:
+              </p>
+              <p>
+                Technische Universität Berlin, University of Groningen
+              </p>
+
+              <p className="font-semibold font-montserrat mt-2">
+                Research Associate:
+              </p>
+              <p>
+                Syngene International Limited
+              </p>
+
+              <p className="font-semibold font-montserrat mt-2">
+                Area of Interest:
+              </p>
+              <p>
+                Organometallic Chemistry, Homogeneous Catalysis,
+                Biomass Conversions, Green Chemistry
+              </p>
+
+              <p className="font-semibold font-montserrat mt-2">
+                Phone: +91-12345678
+              </p>
+
+              <p className="font-semibold font-montserrat">
+                Email:{" "}
+                <a
+                  href="mailto:abcd.chy@iitbhu.ac.in"
+                  className="text-blue-600 underline"
+                >
+                  abcd.chy@iitbhu.ac.in
+                </a>
+              </p>
 
 
                {/* Social Media Icons */}
@@ -123,7 +157,7 @@ export default function Students() {
           <div className="mt-0">
             <img
               className="w-full md:w-3/4 shadow-lg"
-              src="https://m.economictimes.com/thumb/msid-108212368,width-1200,height-900,resizemode-4,imgsize-69468/ms-dhoni.jpg"
+              src="/saravan_sir.jpeg"
               alt="Professor"
             />
           </div>
@@ -149,57 +183,6 @@ export default function Students() {
         ))}
       </div>
 
-      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {filteredStudents.map((student, index) => (
-          <div
-            key={index}
-            className="bg-white text-black p-6 rounded-xl shadow-lg text-center"
-          >
-            <img
-              src={student.image}
-              alt={student.name}
-              className="w-40 h-40 object-cover object-center mx-auto rounded-full mb-4 border-1 border-gray-500"
-            />
-            <h3 className="text-xl font-bold mb-1">{student.name}</h3>
-            <p className="text-blue-500 font-medium mb-2">{student.role}</p>
-            <p className="text-gray-600 mb-1">
-              <strong>Focus:</strong> {student.focus}
-            </p>
-            <p className="text-sm text-gray-500 mb-3">Year: {student.year}</p>
-
-            <div className="flex justify-center gap-4">
-              {student.linkedin && (
-                <a
-                  href={student.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800"
-                >
-                  <FontAwesomeIcon icon={faLinkedin} size="lg" />
-                </a>
-              )}
-              {student.github && (
-                <a
-                  href={student.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-800 hover:text-black"
-                >
-                  <FontAwesomeIcon icon={faGithub} size="lg" />
-                </a>
-              )}
-              {student.email && (
-                <a
-                  href={`mailto:${student.email}`}
-                  className="text-red-600 hover:text-red-800"
-                >
-                  <FontAwesomeIcon icon={faEnvelope} size="lg" />
-                </a>
-              )}
-            </div>
-          </div>
-        ))}
-      </div> */}
 <div className="md:mx-28 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
   {filteredStudents.map((student, index) => (
     <div
@@ -278,7 +261,7 @@ export default function Students() {
       </div>
     </div>
   ))}
-</div>
+</div></div>
 
     </section>
   );
